@@ -1,42 +1,51 @@
-echo "Hello World"
+1. echo "Hello World"
 
-mkdir new_dir
+2. mkdir new_dir
 
-rm -r new_dir
+3. rm -r new_dir
 
+4.
 cd lorem
 cp sed.txt ../lorem-copy
 
-
+5.
 cp at.txt ../lorem-copy; lorem.txt ../lorem-copy; 
 
+6.
 cd ../lorem
 cat sed.txt
 cat at.txt
 cat lorem.txt
 
+7.
 cd ../lorem-copy
 
+8.
 head -3 sed.txt
+
+9.
 tail -3 sed.txt
 
+10.
 echo "Homo homini lupus." >> sed.txt
 
+11.
 tail -3 sed.txt
 
-tail -2 sed.txt
-
+12.
 cd ..lorem
 sed 's/et/ET/g' at.txt > new_file.txt
 
-whoami
+13. whoami
 
-pwd
+14. pwd
 
-find . -name '*.txt'
-
-
-Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+15. find . -name '*.txt'
 
 
-Count the files which start with lorem in all directories.
+16. wc -l sed.txt
+
+
+17. grep -rl "lorem" | wc -l
+
+
